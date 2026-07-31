@@ -1,8 +1,31 @@
 aid: olema
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/olema.png
 name: Olema
-description: Olema is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Olema Oncology is a clinical-stage biopharmaceutical company headquartered in
+  San Francisco with operations in Cambridge, Massachusetts, focused on
+  developing targeted therapies for cancer. Founded in 2006, the company works
+  in endocrine-driven cancers, nuclear receptors, and mechanisms of tumor drug
+  resistance, with a stated goal of transforming the metastatic breast cancer
+  treatment paradigm. Its investigational pipeline includes palazestrant
+  (OP-1250), an oral complete estrogen receptor antagonist and selective
+  estrogen receptor degrader advancing through the Phase 3 OPERA program, and
+  OP-3136, a KAT6 inhibitor in Phase 1 clinical trials. Olema trades publicly on
+  the Nasdaq exchange under the ticker OLMA. As a clinical-stage pharmaceutical
+  company, Olema does not currently publish a developer-facing API, developer
+  portal, SDKs, or public API documentation; this profile captures its corporate
+  identity in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/olema/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +35,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Biopharmaceutical
+- Oncology
+- Healthcare
+- Pharmaceuticals
+- Clinical Trials
+- Life Sciences
+- Breast Cancer
+common:
+- type: DomainSecurity
+  url: security/olema-domain-security.yml
+- url: https://www.olema.com
+  type: Website
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
